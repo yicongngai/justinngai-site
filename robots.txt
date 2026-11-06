@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://justinngai.com/sitemap.xml

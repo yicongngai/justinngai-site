@@ -1,0 +1,28 @@
+# Declarative legacy redirect rules; the current Sites static runtime ignores _redirects.
+# HTML meta-refresh/canonical fallback pages provide compatibility. Do not claim HTTP 301.
+/videos /property-insights/ 301
+/videos/ /property-insights/ 301
+/reviews /new-condo-launch/ 301
+/reviews/ /new-condo-launch/ 301
+/home-tours/bluwaters-home-tour /about#home-tours 301
+/home-tours/bluwaters-home-tour/ /about#home-tours 301
+/home-tours/summerhill-home-tour /about#home-tours 301
+/home-tours/summerhill-home-tour/ /about#home-tours 301
+/home-tours/the-topiary-home-tour /about#home-tours 301
+/home-tours/the-topiary-home-tour/ /about#home-tours 301
+/home-tours/a-treasure-trove-home-tour /about#home-tours 301
+/home-tours/a-treasure-trove-home-tour/ /about#home-tours 301
+/profile /about 301
+/profile/ /about 301
+/projects /new-condo-launch/ 301
+/projects/ /new-condo-launch/ 301
+/articles /guides/ 301
+/articles/ /guides/ 301
+/listings /contact 301
+/listings/ /contact 301
+/privacy /site-information/#privacy 301
+/privacy/ /site-information/#privacy 301
+/disclaimer /site-information/#property-information 301
+/disclaimer/ /site-information/#property-information 301
+/terms-of-use /site-information/ 301
+/terms-of-use/ /site-information/ 301

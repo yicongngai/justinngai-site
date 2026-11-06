@@ -1,0 +1,72 @@
+/* JND Graphite & Ember design tokens. Source of truth: command-centre/theme-graphite.css
+   and the vault note "Brand System" (decided 3 Sep 2026). Two palettes, one system:
+   graphite greys for structure, the ember ramp for every colour. */
+:root{
+  /* ground */
+  --jnd-bg:#F7F7F8;
+  --jnd-card:#FFFFFF;
+
+  /* graphite ramp, light to dark */
+  --jnd-g1:#E6E7E9;
+  --jnd-g2:#C7C9CE;
+  --jnd-g3:#9EA2AA;
+  --jnd-g4:#6E737D;
+  --jnd-g5:#41454E;
+  --jnd-g6:#1B1D22;
+
+  /* ember ramp, the only colour family, light to dark */
+  --jnd-e1:#F6D046;
+  --jnd-e2:#F2A63A;
+  --jnd-e3:#E8722C;
+  --jnd-e4:#CF3F22;
+  --jnd-e5:#8E2118;
+  --jnd-e6:#4E1310;
+
+  /* ember tints for bands and highlighted rows */
+  --jnd-tint-yellow:#FDF0C4;
+  --jnd-tint-amber:#FBE3C4;
+  --jnd-tint-peach:#FBEFD9;
+  --jnd-tint-cream:#FDF6EC;
+
+  /* state marks only: a dot plus a word, never a fill */
+  --jnd-ok:#3E7C59;
+  --jnd-warn:#B7791F;
+  --jnd-down:#B42318;
+  --jnd-unknown:#9EA2AA;
+
+  /* semantic aliases */
+  --jnd-ink:var(--jnd-g6);
+  --jnd-muted:var(--jnd-g4);
+  --jnd-line:var(--jnd-g1);
+  --jnd-accent:var(--jnd-e4);
+  --jnd-accent-strong:var(--jnd-e5);
+
+  /* type */
+  --jnd-font:"Outfit","Avenir Next","Helvetica Neue",Arial,sans-serif;
+  --jnd-weight-light:300;
+  --jnd-weight-regular:400;
+  --jnd-weight-medium:500;
+  --jnd-size-caption:12.5px;
+  --jnd-size-body:14px;
+  --jnd-size-title:16px;
+  --jnd-size-brand:24px;
+  --jnd-size-stat:32px;
+  --jnd-size-hero:48px;
+
+  /* shape */
+  --jnd-radius-card:22px;
+  --jnd-radius-panel:14px;
+  --jnd-radius-inset:12px;
+  --jnd-radius-pill:999px;
+
+  /* depth: one tonal step plus a soft shadow, no borders except inputs */
+  --jnd-shadow-card:0 1px 2px rgba(27,29,34,.04),0 8px 24px rgba(27,29,34,.05);
+
+  /* spacing */
+  --jnd-space-1:4px;
+  --jnd-space-2:8px;
+  --jnd-space-3:12px;
+  --jnd-space-4:16px;
+  --jnd-space-5:24px;
+  --jnd-space-6:32px;
+}
