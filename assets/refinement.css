@@ -172,3 +172,8 @@ summary::after{width:2px;height:12px;right:19px}
 details[open]>summary::after{display:none}
 .faq-category summary,.location-filters summary,.plan-group summary{padding-right:40px}
 @media(prefers-reduced-motion:reduce){a{transition:none}}
+
+/* 11 Nov 2026: About page. Portrait and contact card sit in one side column spanning both text rows,
+   so the tall portrait no longer stretches the first row and leaves a blank before the biography. */
+@media(min-width:701px){.about-opening{grid-column:1;grid-row:1;align-self:start}.about-biography{grid-column:1;grid-row:2}.about-side{grid-column:2;grid-row:1/span 2;align-self:start;display:grid;row-gap:32px;justify-items:center}.about-side .profile-details{width:100%;max-width:385px}}
+@media(max-width:700px){.about-side{display:contents}}
