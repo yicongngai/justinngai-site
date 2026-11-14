@@ -190,3 +190,8 @@ details[open]>summary::after{display:none}
 .bar-value{font-size:15px;font-weight:500;white-space:nowrap}
 .bar-chart .fine{margin:14px 0 0}
 @media(max-width:560px){.bar-chart{padding:22px 18px 16px}.bar-row{grid-template-columns:1fr;gap:6px}}
+/* 14 Nov 2026, his ruling: the floating WhatsApp button is WhatsApp green with the mark. This button only. */
+.floating-contact{display:inline-flex;align-items:center;gap:9px;background:#25D366;color:#fff;font-weight:600;font-size:15px;line-height:1;padding:13px 20px 13px 16px;box-shadow:0 6px 22px rgba(18,140,70,.34)}
+.floating-contact svg{width:22px;height:22px;fill:currentColor;flex:none}
+.floating-contact:hover,.floating-contact:focus-visible{background:#1EBE5A;color:#fff}
+@media(max-width:560px){.floating-contact{padding:12px 17px 12px 14px}}
