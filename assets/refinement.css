@@ -195,3 +195,33 @@ details[open]>summary::after{display:none}
 .floating-contact svg{width:22px;height:22px;fill:currentColor;flex:none}
 .floating-contact:hover,.floating-contact:focus-visible{background:#1EBE5A;color:#fff}
 @media(max-width:560px){.floating-contact{padding:12px 17px 12px 14px}}
+/* 15 Nov 2026, phone fixes. No change above 900px.
+   1. Hub search: the placeholder "Search condos, places or schools" was cut off at phone width. The typed text stays 16px
+      (smaller would make iPhones zoom in on tap); only the placeholder scales down to fit. */
+@media(max-width:600px){.hub-search input::placeholder{font-size:min(16px,3.6vw);text-overflow:ellipsis}}
+/* 2. Phone menu: the desktop header's "Let's chat" link is hidden at this width, so the open menu had no contact entry.
+      The link stays where it is in the page (straight after the menu) and is shown as the last row of the open menu card.
+      Row maths, from the rules above: the card starts 90px down with 20px padding; five links (tests pin the menu to five)
+      of 13px x 1.6 line height + 26px padding = 46.8px each, 16px apart. */
+@media(max-width:900px){
+header nav.open{padding-bottom:calc(20px + 16px + 46.8px)}
+header nav.open+.header-contact{display:block;position:absolute;left:50px;right:50px;top:calc(90px + 20px + 5*46.8px + 5*16px);min-height:0;padding:13px 15px;background:none;border-radius:0;font-size:13px;line-height:1.6}
+}
+/* 15 Nov 2026, his "go ahead with all of B". No change to any existing rule.
+   1. About page: one line that says who he is, between the "About me" label and the greeting. */
+.about-opening>p.about-summary{font-size:17px;line-height:1.7;max-width:630px;margin:0 0 30px}
+@media(max-width:700px){.about-opening>p.about-summary{font-size:16px;margin-bottom:26px}}
+/* 2. Contact page: one large WhatsApp button, in the green of the floating button (his 14 Nov ruling), and a phone
+      number that stays on one line. */
+.contact-whatsapp{display:inline-flex;align-items:center;gap:12px;background:#25D366;color:#fff;font-weight:600;font-size:19px;line-height:1;padding:19px 30px 19px 24px;border-radius:999px;box-shadow:0 6px 22px rgba(18,140,70,.34);margin:0 0 34px}
+.contact-whatsapp svg{width:28px;height:28px;fill:currentColor;flex:none}
+.contact-whatsapp:hover,.contact-whatsapp:focus-visible{background:#1EBE5A;color:#fff}
+.phone-number{white-space:nowrap}
+@media(max-width:560px){.contact-whatsapp{display:flex;justify-content:center;font-size:18px;padding:18px 22px}}
+/* 3. Project pages on Government Land Sales sites: the land tender fact, as the last line of the fact panel.
+      Same card as the other facts, full width, one row where there is room. */
+.fact-strip>div.fact-land{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 22px;padding-top:18px;padding-bottom:18px}
+.fact-strip>div.fact-land span{margin-bottom:0}
+.fact-strip>div.fact-land strong{font-size:19px}
+.fact-strip>div.fact-land .fine{margin:0}
+.fact-strip>div.fact-land .text-link{font-size:inherit}

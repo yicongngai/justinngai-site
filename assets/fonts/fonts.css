@@ -1,3 +1,5 @@
-@font-face{font-family:'Outfit';font-style:normal;font-weight:300;font-display:swap;src:url('./Outfit-300.woff2') format('woff2')}
+/* 15 Nov 2026: Outfit-300, -400 and -500.woff2 are one and the same variable font (weight axis 100 to 900, identical bytes),
+   so all three weights now read the one file and it downloads once. build.py preloads it in the page head. */
+@font-face{font-family:'Outfit';font-style:normal;font-weight:300;font-display:swap;src:url('./Outfit-400.woff2') format('woff2')}
 @font-face{font-family:'Outfit';font-style:normal;font-weight:400;font-display:swap;src:url('./Outfit-400.woff2') format('woff2')}
-@font-face{font-family:'Outfit';font-style:normal;font-weight:500;font-display:swap;src:url('./Outfit-500.woff2') format('woff2')}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:500;font-display:swap;src:url('./Outfit-400.woff2') format('woff2')}
